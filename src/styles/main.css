@@ -1,0 +1,79 @@
+/* Main Layout */
+.wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background: #2b3643;
+  color: #fff;
+  transition: all 0.3s;
+  min-height: 100vh;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar.collapsed .sidebar-brand {
+  display: none;
+}
+
+.sidebar.collapsed .nav-link span {
+  display: none;
+}
+
+.sidebar.collapsed .sidebar-icon {
+  margin-right: 0;
+  font-size: 1.4rem;
+}
+
+.sidebar-header {
+  padding: 20px;
+  background: #1f2937;
+}
+
+.sidebar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.sidebar .nav-link {
+  color: #b4bcc8;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.sidebar.collapsed .nav-link {
+  padding: 12px;
+  justify-content: center;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: #fff;
+  background: #1f2937;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  min-width: 20px;
+}
+
+/* Main Content Area */
+.main {
+  flex: 1;
+  background: #f5f6fa;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+/* Rest of the CSS remains the same */
