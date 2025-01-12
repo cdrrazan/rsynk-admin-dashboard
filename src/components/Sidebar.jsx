@@ -15,7 +15,7 @@ function Sidebar({ collapsed }) {
   return (
     <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
       <div className="sidebar-header">
-        <h3 className="sidebar-brand">rSYNK</h3>
+        <h3 className="sidebar-brand">Rsynk</h3>
       </div>
 
       <Nav className="flex-column">
